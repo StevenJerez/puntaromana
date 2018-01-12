@@ -1,0 +1,241 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Myriad Pro", sans-serif; }
+
+@font-face {
+  font-family: 'Optima Bold';
+  src: url("../fonts/Optima-Bold_34072.woff") format("woff"), url("../fonts/Optima-Bold_34072.ttf") format("truetype"); }
+
+header {
+  background: rgba(0, 0, 0, 0.2); }
+
+.navbar-nav {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.hero-slider {
+  height: 100%; }
+  .hero-slider .hero-content {
+    height: 100%;
+    background-size: cover; }
+    .hero-slider .hero-content .container {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .hero-slider .hero-content.first {
+      background-image: url("../img/bg-1.png"); }
+    .hero-slider .hero-content .title {
+      font-family: 'Optima Bold';
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 41px;
+      position: relative;
+      margin-bottom: 75px; }
+      .hero-slider .hero-content .title:before {
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 3px;
+        background: #fff;
+        bottom: -40px; }
+    .hero-slider .hero-content .content {
+      max-width: 600px;
+      font-size: 22px;
+      color: #fff; }
+      .hero-slider .hero-content .content::first-letter {
+        font-family: 'Optima Bold';
+        float: left;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px; }
+
+.custom-prev {
+  position: absolute;
+  top: 50%;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: right;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  left: 0;
+  z-index: 99;
+  color: #fff; }
+
+.custom-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-align: right;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  right: 0;
+  z-index: 99;
+  color: #fff; }
+
+.destinations .destination {
+  background-size: cover;
+  padding: 3.5vw;
+  position: relative; }
+  .destinations .destination:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+  .destinations .destination:hover .title {
+    opacity: 1; }
+  .destinations .destination:hover .content {
+    opacity: 1; }
+  .destinations .destination:hover:before {
+    opacity: 1; }
+  .destinations .destination.first {
+    background-image: url("../img/dest-1.png"); }
+  .destinations .destination.second {
+    background-image: url("../img/dest-2.png"); }
+  .destinations .destination.third {
+    background-image: url("../img/dest-3.png"); }
+  .destinations .destination.fourth {
+    background-image: url("../img/dest-4.png"); }
+  .destinations .destination .title {
+    font-family: 'Optima Bold';
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 41px;
+    position: relative;
+    margin-bottom: 75px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+    .destinations .destination .title:before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: #fff;
+      bottom: -40px; }
+  .destinations .destination .content {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+    .destinations .destination .content::first-letter {
+      font-family: 'Optima Bold';
+      float: left;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
+
+.overview {
+  padding: 5vw 0; }
+
+.main-title {
+  font-family: 'Optima Bold';
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 41px;
+  margin-bottom: 75px;
+  position: relative;
+  z-index: 1; }
+  .main-title-blue {
+    color: #1d2941; }
+    .main-title-blue:before {
+      background: #1d2941; }
+  .main-title-white {
+    color: #fff; }
+    .main-title-white:before {
+      background: #fff; }
+  .main-title:before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 3px;
+    bottom: -40px; }
+  .main-title small {
+    display: block;
+    font-size: 18px;
+    font-family: "Myriad Pro", sans-serif;
+    text-transform: capitalize;
+    color: #585858; }
+
+.overview-elem {
+  counter-reset: my-counter; }
+  .overview-elem .btn {
+    width: 90%;
+    margin-left: 16px; }
+  .overview-elem dt + dt {
+    margin-top: 12px; }
+
+.overview-elem dt:before {
+  content: counter(my-counter, decimal-leading-zero);
+  counter-increment: my-counter; }
+
+.distance {
+  text-align: center;
+  background: #ebebeb;
+  padding: 4em 0; }
+  .distance-title {
+    font-weight: bold;
+    font-size: 23px;
+    color: #3f94bb;
+    margin-top: 16px;
+    margin-bottom: 8px; }
+  .distance-sub {
+    font-size: 18px;
+    color: #585757; }
+
+.investment {
+  background: #3f94bb;
+  padding: 6em 0; }
+  .investment .content {
+    font-size: 18px;
+    color: #fff;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 36px;
+    column-gap: 36px; }
+    .investment .content::first-letter {
+      font-family: 'Optima Bold';
+      float: left;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
