@@ -25,9 +25,11 @@ header {
     .hero-slider .hero-content .container {
       height: 100%;
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
+      -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; }
     .hero-slider .hero-content.first {
@@ -182,6 +184,10 @@ header {
     color: #fff; }
     .main-title-white:before {
       background: #fff; }
+  .main-title-gray {
+    color: #585757; }
+    .main-title-gray:before {
+      background: #585757; }
   .main-title:before {
     position: absolute;
     content: '';
@@ -194,6 +200,8 @@ header {
     font-family: "Myriad Pro", sans-serif;
     text-transform: capitalize;
     color: #585858; }
+  .main-title.small {
+    font-size: 28px !important; }
 
 .overview-elem {
   counter-reset: my-counter; }
@@ -228,8 +236,10 @@ header {
     font-size: 18px;
     color: #fff;
     -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 36px;
+    -moz-column-gap: 36px;
     column-gap: 36px; }
     .investment .content::first-letter {
       font-family: 'Optima Bold';
@@ -239,3 +249,115 @@ header {
       padding-top: 4px;
       padding-right: 8px;
       padding-left: 3px; }
+
+.white {
+  color: #fff;
+  font-size: 20px; }
+
+.gray {
+  color: #585757; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.lote-1 {
+  counter-reset: my-counter-2; }
+  .lote-1 .btn {
+    width: 80%;
+    margin-left: 16px; }
+  .lote-1 dt + dt {
+    margin-top: 12px; }
+
+.lote-1 dt:before {
+  content: counter(my-counter-2, decimal-leading-zero);
+  counter-increment: my-counter-2;
+  color: white; }
+
+.lote-2 {
+  counter-reset: my-counter-3 9; }
+  .lote-2 .btn {
+    width: 80%;
+    margin-left: 16px; }
+  .lote-2 dt + dt {
+    margin-top: 12px; }
+
+.lote-2 dt:before {
+  content: counter(my-counter-3, decimal-leading-zero);
+  counter-increment: my-counter-3;
+  color: white; }
+
+.map-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.info {
+  padding: 6em 0; }
+  .info .content {
+    font-size: 18px;
+    color: #585757;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 36px;
+    -moz-column-gap: 36px;
+    column-gap: 36px; }
+    .info .content::first-letter {
+      font-family: 'Optima Bold';
+      float: left;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
+  .info .line-b {
+    border-bottom: 2px solid rgba(88, 87, 87, 0.2);
+    padding-bottom: 4em; }
+
+.parsley-errors-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  color: chocolate; }
+
+.contact-form label {
+  color: #585757;
+  font-weight: bold; }
+
+footer {
+  background: #14161b;
+  padding: 3em 0; }
+  footer .logo {
+    opacity: 0.3; }
+  footer .small {
+    color: white; }
+    footer .small a {
+      color: #fff; }
+  footer .social a + a {
+    margin-left: 16px; }
+
+@media (min-width: 768px) {
+  .lote-1 .btn, .lote-2 .btn {
+    margin-left: 10px !important; } }
+
+@media (max-width: 320px) {
+  .logo, .navbar-brand {
+    max-width: 70%; } }
+
+@media (max-width: 767px) {
+  .info .content {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
+@media (max-width: 425px) {
+  .info .content, .investment .content {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; } }
