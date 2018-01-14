@@ -387,6 +387,13 @@ footer {
     }
   }
 }
+.modal-t {
+  font-size: 26px;
+  font-family: $font-1;
+  color: #585757;
+  margin-bottom: 0.5em;
+  padding-left: 40px;
+}
 @media (min-width: 768px) {
   .lote-1, .lote-2 {
     .btn {
@@ -411,5 +418,8 @@ footer {
     .content {
       column-count: 1;
     }
+  }
+  .overview-elem .btn {
+    margin-left: 10px;
   }
 }

@@ -342,6 +342,13 @@ footer {
   footer .social a + a {
     margin-left: 16px; }
 
+.modal-t {
+  font-size: 26px;
+  font-family: "Optima Bold";
+  color: #585757;
+  margin-bottom: 0.5em;
+  padding-left: 40px; }
+
 @media (min-width: 768px) {
   .lote-1 .btn, .lote-2 .btn {
     margin-left: 10px !important; } }
@@ -360,4 +367,6 @@ footer {
   .info .content, .investment .content {
     -webkit-column-count: 1;
     -moz-column-count: 1;
-    column-count: 1; } }
+    column-count: 1; }
+  .overview-elem .btn {
+    margin-left: 10px; } }

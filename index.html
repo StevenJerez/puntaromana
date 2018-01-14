@@ -22,24 +22,25 @@
   </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Destination</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Overview</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Hotels</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Investment</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">General Info</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Contact Us</a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#destination">Destination</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#overview">Overview</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#hotels">Hotels</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#investment">Investment</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#info">General Info</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#contact">Contact Us</a> </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="hero-slider">
+    <div class="hero-slider" id="home">
       <div class="hero-content first">
         <div class="container">
           <div>
             <div class="title"> A destination<br> unlike any other </div>
-            <p class="content"> This is a Tourist Destination with Large Hotels, Marina, Hotel Convention Center, Golf Course, Shopping Center and Residential Villas. A Special Place to Live, Spend your Holiday and Enjoy Leisure and Entertainment. </p> <button type="button"
-              class="btn btn-primary mt-3">CONTACT US</button> </div>
+            <p class="content"> This is a Tourist Destination with Large Hotels, Marina, Hotel Convention Center, Golf Course, Shopping Center and Residential Villas. A Special Place to Live, Spend your Holiday and Enjoy Leisure and Entertainment. </p>
+            <a href="#contact" class="btn btn-primary mt-3">CONTACT US</a>
+          </div>
         </div>
       </div>
       <div class="hero-content">
@@ -47,13 +48,14 @@
           <div class="container">
             <div>
               <div class="title"> A destination<br> unlike any other </div>
-              <p class="content"> This is a Tourist Destination with Large Hotels, Marina, Hotel Convention Center, Golf Course, Shopping Center and Residential Villas. A Special Place to Live, Spend your Holiday and Enjoy Leisure and Entertainment. </p> <button type="button"
-                class="btn btn-primary mt-3">CONTACT US</button> </div>
+              <p class="content"> This is a Tourist Destination with Large Hotels, Marina, Hotel Convention Center, Golf Course, Shopping Center and Residential Villas. A Special Place to Live, Spend your Holiday and Enjoy Leisure and Entertainment. </p>
+              <a href="#contact" class="btn btn-primary mt-3">CONTACT US</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="destinations">
+    <div class="destinations" id="destination">
       <div class="row no-gutters">
         <div class="col-md-6 destination first">
           <div class="title">NEW TOURIST DESTINATION</div>
@@ -82,13 +84,14 @@
         </div>
       </div>
     </div>
-    <div class="container overview">
+    <div class="container overview" id="overview">
       <div class="main-title main-title-blue">OVERVIEW SITEPLAN <small>The Master plan includes the following:</small></div>
       <div class="row">
         <div class="col-md-6">
           <dl class="overview-elem">
-            <dt><button class="btn btn-sm btn-outline-secondary text-truncate">Beach hotels: 12 with 1,000 rooms. and 1 of 750 rooms.</button></dt>
-            <dt><button class="btn btn-sm btn-outline-secondary text-truncate">Hotels in front of the river: 4 with 1.000 hab. and 1 of 750 rooms.</button></dt>
+            <!-- TODO: PARA AGREGAR IMAGENES, SOLO AGREGAR UN data-img al button con la url de la imagen -->
+            <dt><button class="btn btn-sm btn-outline-secondary text-truncate" data-img="./dist/img/map-1.png">Beach hotels: 12 with 1,000 rooms. and 1 of 750 rooms.</button></dt>
+            <dt><button class="btn btn-sm btn-outline-secondary text-truncate" data-img="./dist/img/map-2.png">Hotels in front of the river: 4 with 1.000 hab. and 1 of 750 rooms.</button></dt>
             <dt><button class="btn btn-sm btn-outline-secondary text-truncate">Real Estate Zone for Apartments and Villas.</button></dt>
             <dt><button class="btn btn-sm btn-outline-secondary">Apartments in Second line Beach.</button></dt>
             <dt><button class="btn btn-sm btn-outline-secondary">Villas in front of the River.</button></dt>
@@ -111,7 +114,7 @@
           </dl>
         </div>
         <div class="col-md-6">
-          <img src="./dist/img/map-1.png" alt="Map" class="img-fluid">
+          <img src="./dist/img/map-1.png" alt="Map" class="img-fluid change-overview">
         </div>
       </div>
     </div>
@@ -138,7 +141,7 @@
         </div>
       </div>
     </div>
-    <div class="investment">
+    <div class="investment" id="investment">
       <div class="container">
         <div class="main-title main-title-white">HOTELS as a<br> Investment</div>
         <div class="content pb-4">
@@ -150,7 +153,7 @@
             <div class="row">
               <div class="col-md-6 lote-1">
                 <dl>
-                  <dt><button class="btn btn-sm btn-outline-light">Lote Hotel 1</button></dt>
+                  <dt><button class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#modal-lote-1">Lote Hotel 1</button></dt>
                   <dt><button class="btn btn-sm btn-outline-light">Lote Hotel 2</button></dt>
                   <dt><button class="btn btn-sm btn-outline-light">Lote Hotel 3</button></dt>
                   <dt><button class="btn btn-sm btn-outline-light">Lote Hotel 4</button></dt>
@@ -183,7 +186,7 @@
         </div>
       </div>
     </div>
-    <div class="info">
+    <div class="info" id="info">
       <div class="container pb-md-4">
         <div class="main-title main-title-gray">Investments <br> General info</div>
         <p class="content line-b">
@@ -194,7 +197,7 @@
           <br>A Spanish family of entrepreneurs and visionaries who in recent decades has participated in the development of the world’s touristic industry.
           They are largely responsible for the leadership that Spain exhibits as a tourist destination on the European continent, and through its companies are making large investments within this sector in Latin America and the Caribbean.
         </p>
-        <div class="main-title small main-title-gray mt-4 pt-4">CONTACT US</div>
+        <div class="main-title small main-title-gray mt-4 pt-4" id="contact">CONTACT US</div>
         <div class="row mt-4 pt-4">
           <div class="col-md-4">
             <p class="fs-18 gray mb-4"><b>Need more information?</b> <br>Leave us your info and we will contact you soon.</p>
@@ -275,6 +278,37 @@
       </div>
       </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal-lote-1" tabindex="-1" role="dialog" aria-labelledby="modal-lote-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-t">
+              LOTE HOTEL 1
+            </div>
+            <ul class="gray">
+              <li> Lot size: 187,400 m2</li>
+              <li> Scheduled Usage: Hotel Tourist</li>
+              <li> Soil Density: 937 rooms</li>
+              <li> Height allowed: 12 levels</li>
+              <li> Size facing the beach: 200 m2</li>
+              <li> Size Depth: 937 m2</li>
+              <li> Distance to La Marina: 412 m2</li>
+              <li> Distance to Beach: 0</li>
+              <li> Connections to all utilities</li>
+              <li> Tax incentives and touristm investment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- javascript   -->
     <script src="./dist/js/jquery-1.9.1.min.js" charset="utf-8"></script>
     <script src="./dist/js/bootstrap.min.js" charset="utf-8"></script>
